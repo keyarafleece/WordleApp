@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WordleApp</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="check_guess">Check Guess</string>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/gradient_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- This TextView is the cute game title-->
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Wordle!!!"
+        android:textSize="50dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="322dp"
+        android:layout_height="255dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.288">
+
+        <!--this is creating the first row of 4 EditText boxes to create the first word.
+    These EditText boxes reference styling (@drawable/edit_text_style) to make their corners rounded.
+    -->
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/edt_1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 2nd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 3rd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 4th out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--this is creating the second row of 4 EditText boxes to create the first word.
+    These EditText boxes reference styling (@drawable/edit_text_style) to make their corners rounded.
+    -->
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/edt_5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                 />
+
+            <!-- This creates the 2nd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_6"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 3rd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_7"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 4th out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_8"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--this is creating the third row of 4 EditText boxes to create the first word.
+    These EditText boxes reference styling (@drawable/edit_text_style) to make their corners rounded.
+    -->
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/edt_9"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 2nd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_10"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 3rd out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_11"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- This creates the 4th out if 4 EditText boxes-->
+            <EditText
+                android:id="@+id/edt_12"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkGuessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
+        android:text="Check Guess 1"
+        app:layout_constraintBottom_toTopOf="@+id/checkGuess2Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <Button
+        android:id="@+id/checkGuess2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
+        android:text="Check Guess 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <Button
+        android:id="@+id/checkGuess3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
+        android:text="Check Guess 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkGuess2Button"
+        app:layout_constraintVertical_bias="0.245" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
