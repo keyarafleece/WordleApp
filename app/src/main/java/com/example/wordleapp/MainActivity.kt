@@ -9,30 +9,18 @@ import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
-    //var guessState = EvaluateGuesses.EvaluateGuesses.toggleGuessState()
 
     var wordToGuess = FourLetterWordList.FourLetterWordList.getRandomFourLetterWord()
     // This is for stacking the game so that I can make a video showing the winning guess.
-     // var wordToGuess = "BEAD"
-
-
-
+    // var wordToGuess = "BEAD"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         val checkGuessButton = findViewById<Button>(R.id.checkGuessButton)
         val checkGuessTwoButton = findViewById<Button>(R.id.checkGuess2Button)
         val checkGuessThreeButton = findViewById<Button>(R.id.checkGuess3Button)
-        // var guessCounter = 0
-       /*
-       var isGuess1 = true
-        var isGuess2 = false
-        var isGuess3 = false
-        */
 
 // Background Animation
         val constraintLayout: ConstraintLayout = findViewById(R.id.mainLayout)
@@ -41,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         animationDrawable.setExitFadeDuration(5000)
         animationDrawable.start()
 
+        // The 12 EditText View references
         val edt1 = findViewById<View>(R.id.edt_1) as EditText
         val edt2 = findViewById<View>(R.id.edt_2) as EditText
         val edt3 = findViewById<View>(R.id.edt_3) as EditText
@@ -56,31 +45,7 @@ class MainActivity : AppCompatActivity() {
         val edt11 = findViewById<View>(R.id.edt_11) as EditText
         val edt12 = findViewById<View>(R.id.edt_12) as EditText
 
-
-
-
-        /*
-        var guess2Index1 = edt5.text.toString().uppercase()
-        var guess2Index2 = edt6.text.toString().uppercase()
-        var guess2Index3 = edt7.text.toString().uppercase()
-        var guess2Index4 = edt8.text.toString().uppercase()
-
-        var guess3Index1 = edt9.text.toString().uppercase()
-        var guess3Index2 = edt10.text.toString().uppercase()
-        var guess3Index3 = edt11.text.toString().uppercase()
-        var guess3Index4 = edt12.text.toString().uppercase()
-        */
-
-
-       // var guess2 = "$guess2Index1$guess2Index2$guess2Index3$guess2Index4"
-       // var guess3 = "$guess3Index1$guess3Index2$guess3Index3$guess3Index4"
-
-
-
-
-
-
-
+        // Guess 1 Button
        checkGuessButton.setOnClickListener {
 
            var guessIndex1 = edt1.text.toString().uppercase()
@@ -88,32 +53,7 @@ class MainActivity : AppCompatActivity() {
            var guessIndex3 = edt3.text.toString().uppercase()
            var guessIndex4 = edt4.text.toString().uppercase()
 
-
-
-          var guess1 = "$guessIndex1$guessIndex2$guessIndex3$guessIndex4"
-
-           /* guessCounter++
-
-
-
-           when (guessCounter) {
-               1 -> {
-                   isGuess1 = true
-               }
-               2 -> {
-                   isGuess1 = false
-                   isGuess2 = true
-                   println("It's Guess 2 now!!")
-               }
-
-               3 -> {
-                   isGuess1 = false
-                   isGuess2 = false
-                   isGuess3 = true
-                   println("It's Guess 3 now!!")
-               }
-
-           }*/
+           var guess1 = "$guessIndex1$guessIndex2$guessIndex3$guessIndex4"
 
            val s = checkGuess(guess1)
            val index1 = s[0]
@@ -121,6 +61,7 @@ class MainActivity : AppCompatActivity() {
            val index3 = s[2]
            val index4 = s[3]
 
+           // Conditionals for changing EditText styles based on guess correctness
 
            when (index1.toChar()) {
 
@@ -162,6 +103,7 @@ class MainActivity : AppCompatActivity() {
            }
        }
 
+        // Guess 2 Button
         checkGuessTwoButton.setOnClickListener {
 
             var guess2Index1 = edt5.text.toString().uppercase()
@@ -209,12 +151,13 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            when (guess2) {
+            when (a) {
                 "OOOO" -> Toast.makeText(applicationContext, "You Won!!!", Toast.LENGTH_LONG).show()
             }
 
         }
 
+        // Guess 3 Button
         checkGuessThreeButton.setOnClickListener {
 
             var guess3Index1 = edt9.text.toString().uppercase()
@@ -262,7 +205,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            when (guess3){
+            when (m){
                 "OOOO" -> Toast.makeText(applicationContext, "You Won!!!", Toast.LENGTH_LONG).show()
                 else -> Toast.makeText(applicationContext, "The word is $wordToGuess", Toast.LENGTH_LONG).show()
             }
