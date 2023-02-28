@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val checkGuessButton = findViewById<Button>(R.id.checkGuessButton)
         val checkGuessTwoButton = findViewById<Button>(R.id.checkGuess2Button)
         val checkGuessThreeButton = findViewById<Button>(R.id.checkGuess3Button)
+        val wordToGuessTextView = findViewById<TextView>(R.id.wordToGuessTextView)
 
 // Background Animation
         val constraintLayout: ConstraintLayout = findViewById(R.id.mainLayout)
@@ -207,7 +208,7 @@ class MainActivity : AppCompatActivity() {
 
             when (m){
                 "OOOO" -> Toast.makeText(applicationContext, "You Won!!!", Toast.LENGTH_LONG).show()
-                else -> Toast.makeText(applicationContext, "The word is $wordToGuess", Toast.LENGTH_LONG).show()
+                else -> wordToGuessTextView.setText("Better luck next time! The word is: $wordToGuess")
             }
 
         }

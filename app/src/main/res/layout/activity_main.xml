@@ -12,15 +12,16 @@
     <!-- This TextView is the cute game title-->
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+        android:fontFamily="@font/arizonia"
         android:text="Wordle!!!"
-        android:textSize="50dp"
+        android:textAlignment="center"
         android:textColor="@color/purple_200"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -252,6 +253,20 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/wordToGuessTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text=""
+            android:fontFamily="More Fonts..."
+            android:textColor="@color/purple_200"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="553dp" />
+
     </LinearLayout>
 
     <Button
@@ -259,6 +274,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_200"
+        android:fontFamily="@font/arvo"
         android:gravity="center"
         android:text="Check Guess 1"
         app:layout_constraintBottom_toTopOf="@+id/checkGuess2Button"
@@ -272,6 +288,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_200"
+        android:fontFamily="@font/arvo"
         android:gravity="center"
         android:text="Check Guess 2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -286,6 +303,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_200"
+        android:fontFamily="@font/arvo"
         android:gravity="center"
         android:text="Check Guess 3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -294,5 +312,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkGuess2Button"
         app:layout_constraintVertical_bias="0.245" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
