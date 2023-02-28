@@ -31,9 +31,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories (video quality comprimised during file compression due to large file size):
+Here's a walkthrough of implemented user stories:
 
-![WordleAppDemo](https://user-images.githubusercontent.com/37948407/221719204-14ede53b-53df-411f-ac9d-004d55bbcdd8.gif)
+![WordleAppDemo2](https://user-images.githubusercontent.com/37948407/221974214-d097f81c-66e4-4327-8f61-ae6136d5080a.gif)
 
 
 
