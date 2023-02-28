@@ -10,9 +10,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
 
-    var wordToGuess = FourLetterWordList.FourLetterWordList.getRandomFourLetterWord()
+     var wordToGuess = FourLetterWordList.FourLetterWordList.getRandomFourLetterWord()
     // This is for stacking the game so that I can make a video showing the winning guess.
-    // var wordToGuess = "BEAD"
+     // var wordToGuess = "EASE"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -207,7 +207,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             when (m){
-                "OOOO" -> Toast.makeText(applicationContext, "You Won!!!", Toast.LENGTH_LONG).show()
+                "OOOO" -> {
+                    Toast.makeText(applicationContext, "You Won!!!", Toast.LENGTH_LONG).show()
+                    wordToGuessTextView.setText("The word is: $wordToGuess")
+                }
                 else -> wordToGuessTextView.setText("Better luck next time! The word is: $wordToGuess")
             }
 
