@@ -19,7 +19,7 @@ The following **optional** features are implemented:
 
 - [ ] User can toggle betweeen different word lists
 - [X] User can see the 'correctness' of their guess through colors on the word 
-- [] User sees a visual change after guessing the correct word
+- [ ] User sees a visual change after guessing the correct word
 - [ ] User can tap a 'Reset' button to get a new word and clear previous guesses
 - [ ] User will get an error message if they input an invalid guess
 - [ ] User can see a 'streak' record of how many words they've guessed correctly.
@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/jSfeaQW.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with:
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -44,6 +44,12 @@ Creating this app was really fun and extremely challenging. Since I had a certai
 researching and rethinking just how to get the app how I wanted. I'd like to refactor this app in the future when I learn more about OOP so that I can implement it 
 more elegantly. I'd also like to add a confetti animation for the winning guess and automatically hide the keyboard. According to my WakaTime tracking extension, I 
 spent more than 24 hours in Android Studio this week on this project. 
+
+<img src='https://i.imgur.com/Niim5g1.png' title='WakaTime Screenshot' width='' alt='WakaTime Screenshot' />
+
+
+
+
 
 ## License
 
