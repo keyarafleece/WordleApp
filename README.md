@@ -27,13 +27,15 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [X] Animated Background
-  [X] Upgraded Design
+* [X] Upgraded Design
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories (video quality comprimised during file compression due to large file size):
 
-<img src='https://i.imgur.com/jSfeaQW.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![WordleAppDemo](https://user-images.githubusercontent.com/37948407/221719204-14ede53b-53df-411f-ac9d-004d55bbcdd8.gif)
+
+
 
 GIF created with:
 [ScreenToGif](https://www.screentogif.com/) for Windows
